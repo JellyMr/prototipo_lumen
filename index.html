@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
         <title>Lumen</title>
 
         <!-- Archivo CSS Bootstrap 5 -->
@@ -14,14 +15,13 @@
 <body> 
     <marquee behavior="" direction="">DISTRIBUIDORA DE SOLUCIONES LUMEN DEL BAJIO OCEANO INDICO 1018 COL. JARDINES DE LA PRADERA 37536 LEÓN GUANAJUATO</marquee>
     <!-- Header -->
-    <main>      
-        <div class="container">
+    <main class="shadow p-3 mb-5 bg-white">      
+        <div class="container ">
           <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
             <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-              <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
               <span class="fs-4"><img src="img/logo_transparent.png" alt="" style="width: 130px; height: 130px;"></span>
+              <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
             </a>
-      
             <ul class="nav nav-pills">
               <li class="nav-item"><a href="index.html" class="nav-link" aria-current="page">Inicio</a></li>
               <li class="nav-item"><a href="productos.html" class="nav-link">Productos y Servicios</a></li>
@@ -37,8 +37,41 @@
 
     <!-- PRINCIPAL -->
 
-    <div class="p-4 p-md-5 mb-4 text-bg-dark">
-        <img src="img/linkedin_banner_image_2.png" alt="" id="logo">
+    <!-- Carrusel -->
+    <div class="contenedor">
+      <div class="slider-contenedor">
+          <section class="contenido-slider">
+              <div>
+                  <h2>Conoce nuestros productos.</h2>
+                  <a href="productos.html">Ver más</a>
+              </div>
+              <img src="img/Logos_Distribuidoras/encoder.webp" alt="No Image" class="shadow">
+
+          </section>
+          <section class="contenido-slider">
+              <div>
+                  <h2>Contactanos.</h2>
+                  <a href="contactos.html">Contact us</a>
+              </div>
+              <img src="img/carrusel/equipos-de-medicion.png" alt="" class="shadow">
+
+          </section>
+      <section class="contenido-slider">
+          <div>
+              <h2>Marcas y distribuciones.</h2>
+              <a href="distribuidoras.html">Contact us</a>
+          </div>
+          <img src="img/carrusel/equipos-de-medicion.png" alt="" class="shadow">
+
+      </section>
+  </div>
+  </div>
+  <!-- FIN Carrusel -->
+
+  <!-- Quienes somos -->
+    <br><br>
+    <div class="p-4 p-md-5 mb-4 text-bg-withe shadow p-3 mb-5 bg-white">
+        <img src="img/linkedin_banner_image_2.png" alt="" id="logo" >
         <div class="col-md-6 px-0">
           <h1 class="display-4 fst-italic">¿Quiénes somos?</h1>
           <p class="lead my-3">Somos una empresa dedicada a
@@ -56,7 +89,8 @@
         </div>
     </div>
 
-    <div class="row align-items-md-stretch" style="margin: auto;">
+    <!-- Mision y Vision -->
+    <div class="row align-items-md-stretch shadow p-3 mb-5 bg-white" style="margin: auto;">
       <div class="col-md-6">
         <div class="h-100 p-5 text-bg-dark rounded-3">
           <h2>Misión</h2>
@@ -88,6 +122,8 @@
       </div>
     </div>
     <br><br>
+
+    <!-- Productos -->
     <div class="row" style="margin: auto;">
       <div class="col-lg-4">
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
@@ -114,19 +150,23 @@
       </div><!-- /.col-lg-4 -->
     </div>
     <br><br>
+
+    <!-- Distribuidoras -->
     <div class="p-4 p-md-5 mb-4 text-bg-dark">
       <h2 style="text-align: center;">FAMILIAS DE MARCAS Y DISTRIBUCIONES</h2>
     </div>
     <!-- FIN PRINCIPAL -->
 
-    <!-- Footer -->  
+    <!-- Footer -->
+    <br><br>  
     <footer class="footer mt-auto py-3 bg-light">
       <div class="container">
         <span class="text-muted">Lumen © <script>document.write(new Date().getFullYear())</script> </span>
       </div>
     </footer>
  
-     <!-- Archivo JS Bootstrap 5 -->  
+     <!-- Archivos JS Bootstrap 5 -->  
+     <script src="js/scripts.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

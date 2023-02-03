@@ -11,62 +11,84 @@
         <link rel="stylesheet" href="css/styles.css">
         <!-- Favicon -->
         <link rel="icon" href="https://nubecolectiva.com/favicon.ico">
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+        <!-- Iconos -->
+        <link rel="stylesheet" href="css/fontello.css">
       </head>
 <body> 
     <marquee behavior="" direction="">DISTRIBUIDORA DE SOLUCIONES LUMEN DEL BAJIO OCEANO INDICO 1018 COL. JARDINES DE LA PRADERA 37536 LEÓN GUANAJUATO</marquee>
     <!-- Header -->
     <main class="shadow p-3 mb-5 bg-white">      
         <div class="container ">
+          <div style="text-align: center;">
+            <img src="img/logo_transparent.png" alt="" style="width: 150px; height: 150px;">
+          </div>
           <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-              <span class="fs-4"><img src="img/logo_transparent.png" alt="" style="width: 130px; height: 130px;"></span>
-              <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-            </a>
-            <ul class="nav nav-pills">
+            <ul class="nav nav-pills" style="margin: 0;">
               <li class="nav-item"><a href="index.html" class="nav-link" aria-current="page">Inicio</a></li>
               <li class="nav-item"><a href="productos.html" class="nav-link">Productos y Servicios</a></li>
               <li class="nav-item"><a href="contactos.html" class="nav-link">Contactanos</a></li>
               <li class="nav-item"><a href="quienes somos.html" class="nav-link">¿Quienes somos?</a></li>
               <li class="nav-item"><a href="distribuidoras.html" class="nav-link">Distribuidoras</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">477 27 30 228 (línea con WhatsApp)</a></li>
             </ul>
           </header>
         </div>
     </main>
     <!-- FIN Header -->
+    <!-- boton estatico -->
+    
+    <a href="https://api.whatsapp.com/send?phone=524773042192" class="btn-wsp" target="_blank"><i class="icon-whatsapp"></i></a>
 
-    <!-- PRINCIPAL -->
-
+    <!-- FIN boton estatico -->
     <!-- Carrusel -->
-    <div class="contenedor">
-      <div class="slider-contenedor">
-          <section class="contenido-slider">
-              <div>
-                  <h2>Conoce nuestros productos.</h2>
-                  <a href="productos.html">Ver más</a>
-              </div>
-              <img src="img/Logos_Distribuidoras/encoder.webp" alt="No Image" class="shadow">
-
-          </section>
-          <section class="contenido-slider">
-              <div>
-                  <h2>Contactanos.</h2>
-                  <a href="contactos.html">Contact us</a>
-              </div>
-              <img src="img/carrusel/equipos-de-medicion.png" alt="" class="shadow">
-
-          </section>
-      <section class="contenido-slider">
-          <div>
-              <h2>Marcas y distribuciones.</h2>
-              <a href="distribuidoras.html">Contact us</a>
+    <div id="myCarousel" class="carousel slide shadow" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+        <div class="container">
+          <div class="carousel-caption text-start" >
+            <h1>Example headline.</h1>
+            <p>Some representative placeholder content for the first slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
           </div>
-          <img src="img/carrusel/equipos-de-medicion.png" alt="" class="shadow">
-
-      </section>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Another example headline.</h1>
+            <p>Some representative placeholder content for the second slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>One more for good measure.</h1>
+            <p>Some representative placeholder content for the third slide of this carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
-  </div>
-  <!-- FIN Carrusel -->
+    <!--FIN Carrusel -->
 
   <!-- Quienes somos -->
     <br><br>

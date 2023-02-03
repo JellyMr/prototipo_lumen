@@ -5,6 +5,12 @@ html {
 body {
     background-color: aquamarine;
 }
+
+#logoheader{
+  position: relative;
+}
+
+/* FOOTER */
 footer {
     background-color: black;
     position: absolute;
@@ -13,16 +19,54 @@ footer {
     height: 60px;
     color: white;
 }
+/* FIN FOOTER */
 
-ul{
-    display: inline-block;
-    margin-top: 40px;
+
+/* LISTA DE HEADER */
+
+.menu_list{
+  text-align: center;
 }
 
+.list_item{
+  display: inline-block;
+  list-style: none;
+}
+
+.link{
+  text-decoration: none;
+  color: inherit;
+  padding: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.1rem;
+  position: relative;
+}
+
+.link::after{
+  content: "";
+  width: 0;
+  height: 4px;
+  background-color: cadetblue;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transition: all .5s;
+  will-change: width;
+}
+
+.link:hover::after{
+  width: 100%;
+  right: 0;
+}
+/* LISTA DE HEADER */
+
+/* CINTA SUPERIOR */
 marquee{
     background-color: aquamarine;
 }
+/* CINTA SUPERIOR */
 
+/* Carrusel */
 #carrusel{
     margin: 0px auto;
     text-align: center;
@@ -34,15 +78,13 @@ marquee{
 }
 
 #logo{
-
+    position: relative;
     float: right;
     width: auto;
     height: 400px;
     margin-top: -70px;
 }
 
-/* Carrusel */
-/* Carousel base class */
 .carousel {
     margin-bottom: 4rem;
   }
@@ -110,6 +152,7 @@ marquee{
       margin-top: 7rem;
     }
   }
+  /* Carrusel */
 
   /* Btn estatico */
 
@@ -141,3 +184,4 @@ marquee{
     background: #fff;
 }
   /* FIN btn Estatico */
+  

@@ -152,14 +152,16 @@ marquee{
       margin-top: 7rem;
     }
   }
+
   /* Carrusel */
 
-  /* Btn estatico */
+  /* Btn Whatsapp */
 
   *{
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: border-box;
   }
 
 .btn-wsp{
@@ -183,5 +185,4 @@ marquee{
     color: #0df053;
     background: #fff;
 }
-  /* FIN btn Estatico */
-  
+  /* FIN btn WhatsApp */

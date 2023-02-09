@@ -3,11 +3,13 @@ html {
     position: relative;
 }
 body {
-    background-color: aquamarine;
+    background-color: #05929f;
 }
 
 #logoheader{
   position: relative;
+  float: left;
+  margin-top: -5px;
 }
 
 /* FOOTER */
@@ -62,7 +64,7 @@ footer {
 
 /* CINTA SUPERIOR */
 marquee{
-    background-color: aquamarine;
+    background-color: #05929f;
 }
 /* CINTA SUPERIOR */
 

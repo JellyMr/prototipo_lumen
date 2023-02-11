@@ -12,6 +12,15 @@ body {
   margin-top: -5px;
 }
 
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  color: black;
+}
+
 /* FOOTER */
 footer {
     background-color: black;
@@ -188,3 +197,81 @@ marquee{
     background: #fff;
 }
   /* FIN btn WhatsApp */
+
+  /* Boton con efecto Hover */
+
+  #btnh{
+    position: relative;
+    padding: 14px 18px;
+    border: none;
+    outline: none;
+    background: #350642;
+    color: #dcc2e4;
+    cursor: pointer; 
+    transition: .5s;
+    overflow: hidden;
+  }
+
+  #btnh:hover{
+    color: #fff;
+  }
+
+  #btnh span{
+    position: absolute;
+    background: #fff;
+    transition: .5s;
+  }
+
+  #btnh span:nth-child(1){
+    width: 100%;
+    height: 1px;
+    top: 0;
+    left: -100%;
+  }
+
+  #btnh span:nth-child(2){
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    right: -100%;
+  }
+
+  #btnh span:nth-child(3){
+    width: 1px;
+    height: 100%;
+    bottom: -100%;
+    left: 0;
+  }
+
+  #btnh span:nth-child(4){
+    width: 1px;
+    height: 100%;
+    top: -100%;
+    right: 0;
+  }
+
+  #btnh:hover span:nth-child(1){
+    left: 0;
+  }
+
+  #btnh:hover span:nth-child(2){
+    right: 0;
+  }
+
+  #btnh:hover span:nth-child(3){
+    bottom: 0;
+  }
+
+  #btnh:hover span:nth-child(4){
+    top: 0;
+  }
+  /* Fin Boton  on efecto Hover */
+
+  /* Tarjetas productos */
+
+  #tarjetas{
+    background-color: #fff;
+    margin: 6px;
+  }
+
+  /* FIN Tarjetas productos */

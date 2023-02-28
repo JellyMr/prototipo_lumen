@@ -6,6 +6,11 @@ body {
     background-color: #05929f;
 }
 
+.img-logo{
+  height: 150px;
+  width: auto;
+}
+
 #logoheader{
   position: relative;
   float: left;

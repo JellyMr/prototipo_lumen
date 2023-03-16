@@ -1,9 +1,16 @@
+*{
+  margin: 0px;
+}
+
 html {
     min-height: 100%;
     position: relative;
 }
+
 body {
     background-color: #05929f;
+  overflow-x: hidden;
+    
 }
 
 .img-logo{

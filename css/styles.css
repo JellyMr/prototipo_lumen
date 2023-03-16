@@ -1,62 +1,64 @@
-*{
+* {
   margin: 0px;
 }
 
 html {
-    min-height: 100%;
-    position: relative;
+  min-height: 100%;
+  position: relative;
 }
 
 body {
-    background-color: #05929f;
+  /*background-color: #05929f*/
+  background-color: #ffff;
   overflow-x: hidden;
-    
+
 }
 
-.img-logo{
+.img-logo {
   height: 150px;
   width: auto;
 }
 
-#logoheader{
+#logoheader {
   position: relative;
   float: left;
   margin-top: -5px;
 }
 
-a{
+a {
   text-decoration: none;
   color: black;
 }
 
-a:hover{
+a:hover {
   color: black;
 }
 
 /* FOOTER */
 footer {
-    background-color: black;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    color: white;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  color: white;
 }
+
 /* FIN FOOTER */
 
 
 /* LISTA DE HEADER */
 
-.menu_list{
+.menu_list {
   text-align: center;
 }
 
-.list_item{
+.list_item {
   display: inline-block;
   list-style: none;
 }
 
-.link{
+.link {
   text-decoration: none;
   color: inherit;
   padding: 10px;
@@ -65,7 +67,7 @@ footer {
   position: relative;
 }
 
-.link::after{
+.link::after {
   content: "";
   width: 0;
   height: 4px;
@@ -77,281 +79,303 @@ footer {
   will-change: width;
 }
 
-.link:hover::after{
+.link:hover::after {
   width: 100%;
   right: 0;
 }
+
 /* LISTA DE HEADER */
 
 /* CINTA SUPERIOR */
-marquee{
-    background-color: #05929f;
+marquee {
+  background-color: #05929f;
 }
+
 /* CINTA SUPERIOR */
 
 /* Carrusel */
-#carrusel{
-    margin: 0px auto;
-    text-align: center;
+
+
+#c {
+  width: auto;
+  height: 400px;
 }
 
-#c{
-    width: auto;
-    height: 400px;
+#logo {
+  position: relative;
+  float: right;
+  width: auto;
+  height: 400px;
+  margin-top: -70px;
 }
 
-#logo{
-    position: relative;
-    float: right;
-    width: auto;
-    height: 400px;
-    margin-top: -70px;
+#carrusel {
+  margin: 0px auto;
+  text-align: center;
 }
 
 .carousel {
   /*  margin-bottom: 4rem;*/
-  }
-  /* Since positioning the image, we need to help out the caption */
-  .carousel-caption {
-    bottom: 5rem;
-    z-index: 10;
-  }
-  
-  /* Declare heights because of positioning of img element */
-  
-  .carousel-item {
-    height: 72vh;
-    padding:3rem;
-  }
-  
-  .carousel-item img {
-    
-      position: absolute;
-      object-fit:cover;
-      top: 0;
-      left: 0;
-      min-height: 72vh;
-  }
+}
 
-  /* MARKETING CONTENT
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 5rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+
+.carousel-item {
+  height: 74vh;
+  padding: 3rem;
+}
+
+.carousel-item img {
+
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  min-height: 74vh;
+}
+
+/* MARKETING CONTENT
   -------------------------------------------------- */
-  
-  /* Center align the text within the three columns below the carousel */
-  .marketing .col-lg-4 {
-    margin-bottom: 1.5rem;
-    text-align: center;
-  }
-  /* rtl:begin:ignore */
-  .marketing .col-lg-4 p {
-    margin-right: .75rem;
-    margin-left: .75rem;
-  }
-  /* rtl:end:ignore */
-  
-  
-  /* Featurettes
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+/* rtl:end:ignore */
+
+
+/* Featurettes
   ------------------------- */
-  
-  .featurette-divider {
-    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
-  }
-  
-  /* Thin out the marketing headings */
-  /* rtl:begin:remove */
-  .featurette-heading {
-    letter-spacing: -.05rem;
-  }
-  
-  /* rtl:end:remove */
-  
-  /* RESPONSIVE CSS
+
+.featurette-divider {
+  margin: 5rem 0;
+  /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+/* rtl:begin:remove */
+.featurette-heading {
+  letter-spacing: -.05rem;
+}
+
+/* rtl:end:remove */
+
+/* RESPONSIVE CSS
   -------------------------------------------------- */
-  
-  @media (min-width: 40em) {
-    /* Bump up size of carousel content */
-    .carousel-caption p {
-      margin-bottom: 1.25rem;
-      font-size: 1.25rem;
-      line-height: 1.4;
-    }
-  
-    .featurette-heading {
-      font-size: 50px;
-    }
-  }
-  
-  @media (min-width: 62em) {
-    .featurette-heading {
-      margin-top: 7rem;
-    }
+
+@media (min-width: 40em) {
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
   }
 
-  /* Carrusel */
-
-  /* Btn Whatsapp */
-
-  *{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
+  .featurette-heading {
+    font-size: 50px;
   }
-
-.btn-wsp{
-    position: fixed;
-    width: 55px;
-    height: 55px;
-    line-height: 55px;
-    bottom: 30px;
-    right: 30px;
-    background: #0df053;
-    color: #fff;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
-    z-index: 100;
 }
 
-.btn-wsp:hover{
-    text-decoration: none;
-    color: #0df053;
-    background: #fff;
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
 }
-  /* FIN btn WhatsApp */
 
-  /* Boton con efecto Hover */
+/* Carrusel */
 
-  #btnh{
-    position: relative;
-    padding: 14px 18px;
-    border: none;
-    outline: none;
-    background: #350642;
-    color: #dcc2e4;
-    cursor: pointer; 
-    transition: .5s;
-    overflow: hidden;
-  }
+/* Btn Whatsapp */
 
-  #btnh:hover{
-    color: #fff;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
 
-  #btnh span{
-    position: absolute;
-    background: #fff;
-    transition: .5s;
-  }
+.btn-wsp {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  right: 30px;
+  background: #0df053;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
 
-  #btnh span:nth-child(1){
-    width: 100%;
-    height: 1px;
-    top: 0;
-    left: -100%;
-  }
+.btn-wsp:hover {
+  text-decoration: none;
+  color: #0df053;
+  background: #fff;
+}
 
-  #btnh span:nth-child(2){
-    width: 100%;
-    height: 1px;
-    bottom: 0;
-    right: -100%;
-  }
+/* FIN btn WhatsApp */
 
-  #btnh span:nth-child(3){
-    width: 1px;
-    height: 100%;
-    bottom: -100%;
-    left: 0;
-  }
+/* Boton con efecto Hover */
 
-  #btnh span:nth-child(4){
-    width: 1px;
-    height: 100%;
-    top: -100%;
-    right: 0;
-  }
+#btnh {
+  position: relative;
+  padding: 14px 18px;
+  border: none;
+  outline: none;
+  background: #350642;
+  color: #dcc2e4;
+  cursor: pointer;
+  transition: .5s;
+  overflow: hidden;
+}
 
-  #btnh:hover span:nth-child(1){
-    left: 0;
-  }
+#btnh:hover {
+  color: #fff;
+}
 
-  #btnh:hover span:nth-child(2){
-    right: 0;
-  }
+#btnh span {
+  position: absolute;
+  background: #fff;
+  transition: .5s;
+}
 
-  #btnh:hover span:nth-child(3){
-    bottom: 0;
-  }
+#btnh span:nth-child(1) {
+  width: 100%;
+  height: 1px;
+  top: 0;
+  left: -100%;
+}
 
-  #btnh:hover span:nth-child(4){
-    top: 0;
-  }
-  /* Fin Boton  on efecto Hover */
+#btnh span:nth-child(2) {
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  right: -100%;
+}
 
-  /* Tarjetas productos */
+#btnh span:nth-child(3) {
+  width: 1px;
+  height: 100%;
+  bottom: -100%;
+  left: 0;
+}
 
-  #tarjetas{
-    background-color: #fff;
-    margin: 6px;
-  }
-  /* FIN Tarjetas productos */
-  /* DISTRIBUIDORAS */
+#btnh span:nth-child(4) {
+  width: 1px;
+  height: 100%;
+  top: -100%;
+  right: 0;
+}
 
-.card:hover {filter: opacity(.5);}
+#btnh:hover span:nth-child(1) {
+  left: 0;
+}
 
-    
-.contenedor{
+#btnh:hover span:nth-child(2) {
+  right: 0;
+}
+
+#btnh:hover span:nth-child(3) {
+  bottom: 0;
+}
+
+#btnh:hover span:nth-child(4) {
+  top: 0;
+}
+
+/* Fin Boton  on efecto Hover */
+
+/* Tarjetas productos */
+
+#tarjetas {
+  background-color: #fff;
+  margin: 6px;
+}
+
+/* FIN Tarjetas productos */
+/* DISTRIBUIDORAS */
+
+.card:hover {
+  filter: opacity(.5);
+}
+
+
+.contenedor {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.contenedor figure{
- position:relative;
+
+.contenedor figure {
+  position: relative;
   height: 150px;
   cursor: pointer;
   width: 250px;
   overflow: hidden;
   border-radius: 6px;
-  box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
 }
-.contenedor figure img{
+
+.contenedor figure img {
   width: 100%;
   height: 100%;
   transition: all 400ms ease-out;
   will-change: transform;
 }
-.contenedor figure .capa{
+
+.contenedor figure .capa {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,103,123,0.7);
+  background: rgba(0, 103, 123, 0.7);
   transition: all 400ms ease-out;
   opacity: 0;
   visibility: hidden;
- text-align: center;
+  text-align: center;
 }
-.contenedor figure:hover > .capa {
+
+.contenedor figure:hover>.capa {
   opacity: 1;
   visibility: visible;
 }
-.contenedor figure:hover > .capa h3{
+
+.contenedor figure:hover>.capa h3 {
   margin-top: 55px;
   margin-bottom: 15px;
 }
-.contenedor figure:hover > img{
+
+.contenedor figure:hover>img {
   transform: scale(1.3);
 }
-.contenedor figure .capa h3{
+
+.contenedor figure .capa h3 {
   color: #fff;
   font-weight: 400;
   margin-bottom: 120px;
   transition: all 400ms ease-out;
-   margin-top: 30px;
+  margin-top: 30px;
 }
-.contenedor figure .capa p{
+
+.contenedor figure .capa p {
   color: #fff;
   font-size: 15px;
   line-height: 1.5;
@@ -369,27 +393,27 @@ marquee{
 .slider {
   animation: slidein 30s linear infinite;
   white-space: nowrap;
-  
+
 }
 
 .logos {
   width: 100%;
   display: inline-block;
   margin: 0px 0;
-  
+
 }
 
- .logos > img {
+.logos>img {
   width: calc(100% / 5.2);
   padding: 10px;
-  animation: fade-in 0.5s 
-    cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+  animation: fade-in 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
 }
 
 @keyframes slidein {
   from {
     transform: translate3d(0, 0, 0);
   }
+
   to {
     transform: translate3d(-100%, 0, 0);
   }
@@ -399,8 +423,10 @@ marquee{
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 /*Fin Slider marcas*/

@@ -118,9 +118,9 @@
 
   <!-- Footer -->
   <br><br>
-  <footer class="footer mt-auto py-3 bg-light">
+  <footer class="footer mt-auto py-3">
     <div class="container">
-      <span class="text-muted">Lumen ©
+      <span class="/*text-muted*/">Lumen ©
         <script>
           document.write(new Date().getFullYear())
         </script>

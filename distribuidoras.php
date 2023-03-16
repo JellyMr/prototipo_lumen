@@ -18,7 +18,7 @@
   <!-- FIN Header -->
   <!-- boton estatico -->
 
-  <a href="https://api.whatsapp.com/send?phone=524773042192" class="btn-wsp" target="_blank"><i class="icon-whatsapp"></i></a>
+  <!--<a href="https://api.whatsapp.com/send?phone=524773042192" class="btn-wsp" target="_blank"><i class="icon-whatsapp"></i></a>-->
 
   <!-- FIN boton estatico -->
 

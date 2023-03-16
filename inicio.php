@@ -24,12 +24,8 @@
   <!-- FIN botones estaticos -->
   <!-- Carrusel -->
   <div id="myCarousel" class="carousel slide shadow" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner rounded-5 shadow-4-strong">
+
+    <div class="carousel-inner /*rounded-5*/ shadow-4-strong">
       <div class="carousel-item active">
         <img src="img/carrusel/1.jpg" alt="No Found" width="100%" height="100%" class="bg-opacity">
         <div class="container">
@@ -62,7 +58,7 @@
           </div>
         </div>
       </div>
-      <div class="carousel-item">
+      <div class="carousel-item" >
         <img src="img/carrusel/3.jpg" alt="No Found" width="100%" height="100%" class="bg-opacity">
         <div class="container">
           <div class="carousel-caption text-end">
@@ -89,7 +85,37 @@
     </button>
   </div>
   <!--FIN Carrusel -->
-  
+
+  <!--Inicio Slider marcas-->
+  <div class="container-flex mt-5" style="background:#fff">
+    <div class="container container-slider h-100">
+      <div class="row align-items-center h-100">
+        <div class="container rounded">
+          <h1 class="text-center font-weight-normal">Marcas que manejamos</h1>
+          <div class="slider">
+            <div class="logos">
+              <img src="img/Logos_distribuidoras/image1.png" alt="">
+              <img src="img/Logos_distribuidoras/image2.png" alt="">
+              <img src="img/Logos_distribuidoras/image3.png" alt="">
+              <img src="img/Logos_distribuidoras/image4.png" alt="">
+              <img src="img/Logos_distribuidoras/image5.png" alt="">
+            </div>
+            <div class="logos">
+              <img src="img/Logos_distribuidoras/image1.png" alt="">
+              <img src="img/Logos_distribuidoras/image2.png" alt="">
+              <img src="img/Logos_distribuidoras/image3.png" alt="">
+              <img src="img/Logos_distribuidoras/image4.png" alt="">
+              <img src="img/Logos_distribuidoras/image5.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <!--Fin Slider Marcas-->
+
   <!-- Footer -->
   <br><br>
   <footer class="footer mt-auto py-3 bg-light">
@@ -104,7 +130,8 @@
 
   <!-- Archivos JS Bootstrap 5 -->
   <script src="js/scripts.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+
   <!--Script para el chatbot-->
   <script>
     window.addEventListener('mouseover', initLandbot, {
@@ -115,6 +142,7 @@
     });
     var myLandbot;
 
+    //ChatBot
     function initLandbot() {
       if (!myLandbot) {
         var s = document.createElement('script');
@@ -131,6 +159,8 @@
       }
     }
   </script>
+
+
 </body>
 
 </html>

@@ -109,20 +109,30 @@ marquee{
 }
 
 .carousel {
-    margin-bottom: 4rem;
+  /*  margin-bottom: 4rem;*/
   }
   /* Since positioning the image, we need to help out the caption */
   .carousel-caption {
-    bottom: 3rem;
+    bottom: 5rem;
     z-index: 10;
   }
   
   /* Declare heights because of positioning of img element */
+  
   .carousel-item {
-    height: 32rem;
+    height: 72vh;
+    padding:3rem;
   }
   
-  
+  .carousel-item img {
+    
+      position: absolute;
+      object-fit:cover;
+      top: 0;
+      left: 0;
+      min-height: 72vh;
+  }
+
   /* MARKETING CONTENT
   -------------------------------------------------- */
   
@@ -349,3 +359,48 @@ marquee{
   max-width: 220px;
   margin: auto;
 }
+
+/*Slider marcas*/
+
+.container-slider {
+  overflow: hidden !important;
+}
+
+.slider {
+  animation: slidein 30s linear infinite;
+  white-space: nowrap;
+  
+}
+
+.logos {
+  width: 100%;
+  display: inline-block;
+  margin: 0px 0;
+  
+}
+
+ .logos > img {
+  width: calc(100% / 5.2);
+  padding: 10px;
+  animation: fade-in 0.5s 
+    cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+}
+
+@keyframes slidein {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*Fin Slider marcas*/

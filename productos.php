@@ -117,12 +117,10 @@
 
 
     <!-- Footer -->  
-    <br><br>
-    <footer class="footer mt-auto py-3 bg-light">
-      <div class="container">
-        <span class="text-muted">Lumen © <script>document.write(new Date().getFullYear())</script> </span>
-      </div>
-    </footer>
+    
+    <?php
+  include("footer.html");
+  ?>
  
      <!-- Archivo JS Bootstrap 5 -->  
     <script src="js/bootstrap.bundle.min.js"></script>

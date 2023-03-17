@@ -117,16 +117,10 @@
   <!--Fin Slider Marcas-->
 
   <!-- Footer -->
-  <br><br>
-  <footer class="footer mt-auto py-3">
-    <div class="container">
-      <span class="/*text-muted*/">Lumen ©
-        <script>
-          document.write(new Date().getFullYear())
-        </script>
-      </span>
-    </div>
-  </footer>
+  <?php
+  include("footer.html");
+  ?>
+  
 
   <!-- Archivos JS Bootstrap 5 -->
   <script src="js/scripts.js"></script>

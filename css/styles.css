@@ -11,7 +11,7 @@ body {
   /*background-color: #05929f*/
   background-color: #ffff;
   overflow-x: hidden;
-
+  padding-bottom: 70px !important;/*Un poco mas que el tamaño del footer*/
 }
 
 .img-logo {
